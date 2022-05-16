@@ -1,0 +1,13 @@
+jp_product.qr.url:
+  path: '/image-qr-generate-with-url'
+  defaults:
+    _controller: '\Drupal\jp_product\Controller\QRImageGeneratorController::withUrl'
+  requirements:
+    _access: 'TRUE'
+jp_product.admin_settings:
+  path: '/admin/config/qr-code-settings'
+  defaults:
+    _form: '\Drupal\jp_product\Form\QRCodeConfigurationForm'
+    _title: 'QR Code configuration'
+  requirements:
+    _permission: 'administer site configuration'

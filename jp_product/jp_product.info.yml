@@ -1,0 +1,5 @@
+name: 'Product'
+type: module
+description: 'Custom module for Jugaad Patches Pvt Ltd to create content type & QR code for product purchase link'
+core_version_requirement: ^8 || ^9
+package: 'Custom'

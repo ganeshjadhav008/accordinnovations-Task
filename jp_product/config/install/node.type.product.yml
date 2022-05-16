@@ -1,0 +1,20 @@
+uuid: cbf8e219-157d-46a4-916f-1a2cebf507d9
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: HLTAH_1Tc6nlD6tLqs8ZVsJollTB9Qvj_y_A50n1nf8
+name: Product
+type: product
+description: 'Product content type to node products'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

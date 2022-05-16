@@ -1,0 +1,45 @@
+<?php
+
+/**
+ * @file
+ * Contains jp_product.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function jp_product_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+   
+    case 'help.page.jp_product':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= 'This module depends on endroid/qr-code-bundle library to generate QR code.<p/>
+      To install the library add below mentioned lines in root composer.json file under repository section<p/>
+          {<p/>
+              <p/> "type": "path",
+              <p/>"url": "modules/jp_product/*"
+          <p/>}<p/>
+      For reference: "repositories": [ { "type": "composer", "url": "https://packages.drupal.org/8" }, { "type": "path", "url": "web/modules/jp_product/*" } ],
+      <p/>After adding run the command "composer require drupal/jp_product:@dev"
+      <p/>Or you can directly hit to install the required library. "composer require endroid/qr-code-bundle: ^3.4"';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function jp_product_theme() {
+  return [
+    'product_qr_code_block' => [
+      'variables' => [
+        'image' => [],
+      ],
+    ],
+  ];
+}

@@ -1,0 +1,14 @@
+{
+    "name": "drupal/custom",
+    "description": "Composer.json file to install QR code library.",
+    "type": "drupal-custom-module",
+    "authors": [
+        {
+            "name": "Ganesh",
+            "email": "ganeshjadhav008@gmail.com"
+        }
+    ],
+    "require": {
+        "endroid/qr-code-bundle": "^3.4"
+    }
+}
